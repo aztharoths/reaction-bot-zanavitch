@@ -1,5 +1,4 @@
 const { Client, GatewayIntentBits } = require("discord.js");
-const { token } = require("./config.json");
 const roleClaim = require("./Utils/roleClaim");
 
 const client = new Client({
@@ -11,4 +10,4 @@ client.once("ready", () => {
     roleClaim(client);
 });
 
-client.login(token);
+client.login(process.env.TOKEN);
