@@ -32,7 +32,7 @@ const initSecondMessage = async (channel, text, reactions) => {
  */
 const editSecondMessage = (messages, text, reactions) => {
     for (const message of messages) {
-        message[2].edit(text);
+        message[1].edit(text);
         if (reactions) {
             addReactions(message[1], reactions);
         }
