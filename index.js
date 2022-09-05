@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits } = require("discord.js");
-const { token } = require("./config.json");
+
 const roleClaim = require("./Utils/roleClaim");
 
 const client = new Client({
